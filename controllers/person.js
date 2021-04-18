@@ -1,8 +1,8 @@
 const persons = require('../resources/Persons.json')
 
-const results = [];
-
 exports.listPersons = (req, res) => {
+
+  const results = [];
   
   const limit = req.query.limit
   const start = req.query.start
