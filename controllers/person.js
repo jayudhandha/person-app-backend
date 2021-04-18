@@ -4,8 +4,8 @@ const results = [];
 
 exports.listPersons = (req, res) => {
   console.log(req.query)
-  const limit = +req.query.limit
-  const start = +req.query.start
+  const limit = req.query.limit
+  const start = req.query.start
 
   for(i = start; i < start + limit; i++){
     results.push(persons[i]);
