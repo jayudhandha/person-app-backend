@@ -17,7 +17,7 @@ exports.listPersons = (req, res) => {
   res.status(200).json({
     message: "Person fetched successfully!",
     persons: results,
-    total: results.length
+    total: persons.length
   });
 
 }
