@@ -4,12 +4,12 @@ const results = [];
 
 exports.listPersons = (req, res) => {
   console.log(req.query)
-  const pageSize = +req.query.pagesize
-  const pageIndex = +req.query.pageindex
+  const limit = +req.query.limit
+  const start = +req.query.start
 
-  if(pageSize && pageIndex) {
+  if(limit && start) {
     
-    for(i = pageIndex; i < pageIndex + pageSize; i++){
+    for(i = start; i < start + limit; i++){
       results.push(persons[i]);
     }
 
@@ -26,5 +26,9 @@ exports.listPersons = (req, res) => {
       total: persons.length
     });
   }
+
+
+
 }
+
 
