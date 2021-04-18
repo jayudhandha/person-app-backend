@@ -1,2 +1,6 @@
-# person-app-backend
-Simple Node API to retrieve list of persons object (with server side pagination)
+# student-crm-backend
+Node Backend to manage student details with mongodb database
+
+
+### To run the code locally, Type below command
+`node server.js`
